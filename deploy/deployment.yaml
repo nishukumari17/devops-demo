@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: devops-deployment
-  namespace:default
+  namespace : default
   labels:
     app: devops
 spec:
@@ -13,7 +13,7 @@ spec:
   template:
     metadata:
       labels:
-        app: nginx
+        app: devops
     spec:
       containers:
       - name: devops-demo
